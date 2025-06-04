@@ -1,5 +1,5 @@
 2025-06-04 20:12:08,241 - __main__ - INFO - Логи записываются в файл: C:\Users\HP\PycharmProjects\hh_test_task\resume_analyzer\logs\resume_analyzer_2025-06-04_20-12-08.log
-2025-06-04 20:12:08,314 - llm_interface - INFO - Инициализирован LLM интерфейс с OpenAI API, модель: gpt-3.5-turbo
+2025-06-04 20:12:08,314 - llm_interface - INFO - Инициализирован LLM интерфейс с OpenAI API, модель: gpt-4.1-nano
 2025-06-04 20:12:08,315 - data_generator - INFO - Инициализирован генератор данных
 2025-06-04 20:12:08,315 - analyzer - INFO - Инициализирован анализатор резюме
 2025-06-04 20:12:08,315 - __main__ - INFO - Запуск приложения для анализа резюме...

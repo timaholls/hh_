@@ -33,7 +33,7 @@ class LLMInterface:
         client (OpenAI): Клиент для работы с OpenAI API.
     """
     
-    def __init__(self, model="gpt-3.5-turbo", timeout=60):
+    def __init__(self, model="gpt-4.1-nano", timeout=60):
         """
         Инициализирует интерфейс для взаимодействия с OpenAI API.
         

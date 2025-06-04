@@ -75,7 +75,7 @@ class ResumeAnalyzerApp:
         logger.info(f"Логи записываются в файл: {os.path.abspath(log_file)}")
         
         # Инициализация компонентов
-        self.llm_interface = LLMInterface(model="gpt-3.5-turbo")
+        self.llm_interface = LLMInterface(model="gpt-4.1-nano")
         self.data_generator = DataGenerator(self.llm_interface)
         self.analyzer = ResumeAnalyzer(self.llm_interface)
         
