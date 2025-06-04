@@ -1,0 +1,965 @@
+2025-06-04 20:12:08,241 - __main__ - INFO - Логи записываются в файл: C:\Users\HP\PycharmProjects\hh_test_task\resume_analyzer\logs\resume_analyzer_2025-06-04_20-12-08.log
+2025-06-04 20:12:08,314 - llm_interface - INFO - Инициализирован LLM интерфейс с OpenAI API, модель: gpt-3.5-turbo
+2025-06-04 20:12:08,315 - data_generator - INFO - Инициализирован генератор данных
+2025-06-04 20:12:08,315 - analyzer - INFO - Инициализирован анализатор резюме
+2025-06-04 20:12:08,315 - __main__ - INFO - Запуск приложения для анализа резюме...
+2025-06-04 20:12:08,315 - __main__ - INFO - Генерация тестовых данных...
+2025-06-04 20:12:08,315 - data_generator - INFO - Генерация описания вакансии в файл: data\vacancy\vacancy.txt
+2025-06-04 20:12:08,315 - llm_interface - INFO - Генерация описания вакансии с помощью OpenAI API...
+2025-06-04 20:12:13,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:13,165 - data_generator - INFO - Описание вакансии сгенерировано за 4.85 секунд
+2025-06-04 20:12:13,166 - data_generator - INFO - Описание вакансии сохранено в: C:\Users\HP\PycharmProjects\hh_test_task\resume_analyzer\data\vacancy\vacancy.txt
+2025-06-04 20:12:13,166 - __main__ - INFO - Описание вакансии сгенерировано: data\vacancy\vacancy.txt
+2025-06-04 20:12:13,166 - __main__ - INFO - Генерация 100 резюме...
+2025-06-04 20:12:13,167 - data_generator - INFO - Генерация 100 резюме в директорию: data\resumes
+2025-06-04 20:12:13,167 - data_generator - INFO - Распределение качества резюме: {'high': 20, 'medium': 50, 'low': 30}
+2025-06-04 20:12:13,167 - data_generator - INFO - Генерация резюме 1/100: resume_001.txt (качество: low)
+2025-06-04 20:12:13,167 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:12:17,560 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:17,562 - data_generator - INFO - Резюме resume_001.txt сгенерировано за 4.39 секунд
+2025-06-04 20:12:20,569 - data_generator - INFO - Генерация резюме 2/100: resume_002.txt (качество: low)
+2025-06-04 20:12:20,569 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:12:26,113 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:26,116 - data_generator - INFO - Резюме resume_002.txt сгенерировано за 5.55 секунд
+2025-06-04 20:12:29,126 - data_generator - INFO - Генерация резюме 3/100: resume_003.txt (качество: medium)
+2025-06-04 20:12:29,126 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:12:33,253 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:33,259 - data_generator - INFO - Резюме resume_003.txt сгенерировано за 4.13 секунд
+2025-06-04 20:12:36,272 - data_generator - INFO - Генерация резюме 4/100: resume_004.txt (качество: high)
+2025-06-04 20:12:36,272 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:12:41,012 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:41,014 - data_generator - INFO - Резюме resume_004.txt сгенерировано за 4.74 секунд
+2025-06-04 20:12:44,025 - data_generator - INFO - Генерация резюме 5/100: resume_005.txt (качество: medium)
+2025-06-04 20:12:44,025 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:12:48,165 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:48,170 - data_generator - INFO - Резюме resume_005.txt сгенерировано за 4.15 секунд
+2025-06-04 20:12:51,185 - data_generator - INFO - Генерация резюме 6/100: resume_006.txt (качество: medium)
+2025-06-04 20:12:51,185 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:12:54,830 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:12:54,831 - data_generator - INFO - Резюме resume_006.txt сгенерировано за 3.65 секунд
+2025-06-04 20:12:57,843 - data_generator - INFO - Генерация резюме 7/100: resume_007.txt (качество: medium)
+2025-06-04 20:12:57,843 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:13:06,308 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:06,320 - data_generator - INFO - Резюме resume_007.txt сгенерировано за 8.48 секунд
+2025-06-04 20:13:09,333 - data_generator - INFO - Генерация резюме 8/100: resume_008.txt (качество: low)
+2025-06-04 20:13:09,333 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:13:11,940 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:11,944 - data_generator - INFO - Резюме resume_008.txt сгенерировано за 2.61 секунд
+2025-06-04 20:13:14,956 - data_generator - INFO - Генерация резюме 9/100: resume_009.txt (качество: medium)
+2025-06-04 20:13:14,956 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:13:19,027 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:19,028 - data_generator - INFO - Резюме resume_009.txt сгенерировано за 4.07 секунд
+2025-06-04 20:13:22,043 - data_generator - INFO - Генерация резюме 10/100: resume_010.txt (качество: medium)
+2025-06-04 20:13:22,043 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:13:26,045 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:26,062 - data_generator - INFO - Резюме resume_010.txt сгенерировано за 4.02 секунд
+2025-06-04 20:13:26,063 - data_generator - INFO - Прогресс: 10/100 резюме сгенерировано (10.0%)
+2025-06-04 20:13:29,075 - data_generator - INFO - Генерация резюме 11/100: resume_011.txt (качество: medium)
+2025-06-04 20:13:29,075 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:13:38,648 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:38,650 - data_generator - INFO - Резюме resume_011.txt сгенерировано за 9.58 секунд
+2025-06-04 20:13:41,660 - data_generator - INFO - Генерация резюме 12/100: resume_012.txt (качество: high)
+2025-06-04 20:13:41,660 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:13:47,656 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:47,657 - data_generator - INFO - Резюме resume_012.txt сгенерировано за 6.00 секунд
+2025-06-04 20:13:50,660 - data_generator - INFO - Генерация резюме 13/100: resume_013.txt (качество: high)
+2025-06-04 20:13:50,660 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:13:58,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:13:58,211 - data_generator - INFO - Резюме resume_013.txt сгенерировано за 7.55 секунд
+2025-06-04 20:14:01,226 - data_generator - INFO - Генерация резюме 14/100: resume_014.txt (качество: low)
+2025-06-04 20:14:01,226 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:14:05,938 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:05,939 - data_generator - INFO - Резюме resume_014.txt сгенерировано за 4.71 секунд
+2025-06-04 20:14:08,946 - data_generator - INFO - Генерация резюме 15/100: resume_015.txt (качество: low)
+2025-06-04 20:14:08,946 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:14:14,506 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:14,507 - data_generator - INFO - Резюме resume_015.txt сгенерировано за 5.56 секунд
+2025-06-04 20:14:17,508 - data_generator - INFO - Генерация резюме 16/100: resume_016.txt (качество: high)
+2025-06-04 20:14:17,508 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:14:21,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:21,779 - data_generator - INFO - Резюме resume_016.txt сгенерировано за 4.27 секунд
+2025-06-04 20:14:24,790 - data_generator - INFO - Генерация резюме 17/100: resume_017.txt (качество: low)
+2025-06-04 20:14:24,790 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:14:28,933 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:28,934 - data_generator - INFO - Резюме resume_017.txt сгенерировано за 4.14 секунд
+2025-06-04 20:14:31,949 - data_generator - INFO - Генерация резюме 18/100: resume_018.txt (качество: high)
+2025-06-04 20:14:31,949 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:14:38,710 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:38,712 - data_generator - INFO - Резюме resume_018.txt сгенерировано за 6.76 секунд
+2025-06-04 20:14:41,718 - data_generator - INFO - Генерация резюме 19/100: resume_019.txt (качество: high)
+2025-06-04 20:14:41,718 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:14:45,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:45,076 - data_generator - INFO - Резюме resume_019.txt сгенерировано за 3.36 секунд
+2025-06-04 20:14:48,084 - data_generator - INFO - Генерация резюме 20/100: resume_020.txt (качество: medium)
+2025-06-04 20:14:48,084 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:14:55,093 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:14:55,104 - data_generator - INFO - Резюме resume_020.txt сгенерировано за 7.02 секунд
+2025-06-04 20:14:55,105 - data_generator - INFO - Прогресс: 20/100 резюме сгенерировано (20.0%)
+2025-06-04 20:14:58,113 - data_generator - INFO - Генерация резюме 21/100: resume_021.txt (качество: medium)
+2025-06-04 20:14:58,113 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:15:02,563 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:02,568 - data_generator - INFO - Резюме resume_021.txt сгенерировано за 4.45 секунд
+2025-06-04 20:15:05,569 - data_generator - INFO - Генерация резюме 22/100: resume_022.txt (качество: low)
+2025-06-04 20:15:05,569 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:15:09,414 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:09,419 - data_generator - INFO - Резюме resume_022.txt сгенерировано за 3.85 секунд
+2025-06-04 20:15:12,421 - data_generator - INFO - Генерация резюме 23/100: resume_023.txt (качество: medium)
+2025-06-04 20:15:12,421 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:15:16,529 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:16,531 - data_generator - INFO - Резюме resume_023.txt сгенерировано за 4.11 секунд
+2025-06-04 20:15:19,545 - data_generator - INFO - Генерация резюме 24/100: resume_024.txt (качество: high)
+2025-06-04 20:15:19,545 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:15:24,501 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:24,506 - data_generator - INFO - Резюме resume_024.txt сгенерировано за 4.96 секунд
+2025-06-04 20:15:27,521 - data_generator - INFO - Генерация резюме 25/100: resume_025.txt (качество: low)
+2025-06-04 20:15:27,521 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:15:31,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:31,053 - data_generator - INFO - Резюме resume_025.txt сгенерировано за 3.53 секунд
+2025-06-04 20:15:34,069 - data_generator - INFO - Генерация резюме 26/100: resume_026.txt (качество: low)
+2025-06-04 20:15:34,069 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:15:36,765 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:36,779 - data_generator - INFO - Резюме resume_026.txt сгенерировано за 2.71 секунд
+2025-06-04 20:15:39,791 - data_generator - INFO - Генерация резюме 27/100: resume_027.txt (качество: medium)
+2025-06-04 20:15:39,791 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:15:44,866 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:44,869 - data_generator - INFO - Резюме resume_027.txt сгенерировано за 5.08 секунд
+2025-06-04 20:15:47,876 - data_generator - INFO - Генерация резюме 28/100: resume_028.txt (качество: low)
+2025-06-04 20:15:47,876 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:15:53,367 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:15:53,368 - data_generator - INFO - Резюме resume_028.txt сгенерировано за 5.49 секунд
+2025-06-04 20:15:56,369 - data_generator - INFO - Генерация резюме 29/100: resume_029.txt (качество: medium)
+2025-06-04 20:15:56,369 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:16:00,927 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:00,929 - data_generator - INFO - Резюме resume_029.txt сгенерировано за 4.56 секунд
+2025-06-04 20:16:03,945 - data_generator - INFO - Генерация резюме 30/100: resume_030.txt (качество: low)
+2025-06-04 20:16:03,945 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:16:10,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:10,006 - data_generator - INFO - Резюме resume_030.txt сгенерировано за 6.06 секунд
+2025-06-04 20:16:10,007 - data_generator - INFO - Прогресс: 30/100 резюме сгенерировано (30.0%)
+2025-06-04 20:16:13,017 - data_generator - INFO - Генерация резюме 31/100: resume_031.txt (качество: low)
+2025-06-04 20:16:13,017 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:16:16,798 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:16,800 - data_generator - INFO - Резюме resume_031.txt сгенерировано за 3.78 секунд
+2025-06-04 20:16:19,802 - data_generator - INFO - Генерация резюме 32/100: resume_032.txt (качество: medium)
+2025-06-04 20:16:19,802 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:16:25,527 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:25,531 - data_generator - INFO - Резюме resume_032.txt сгенерировано за 5.73 секунд
+2025-06-04 20:16:28,545 - data_generator - INFO - Генерация резюме 33/100: resume_033.txt (качество: medium)
+2025-06-04 20:16:28,545 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:16:31,876 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:31,881 - data_generator - INFO - Резюме resume_033.txt сгенерировано за 3.34 секунд
+2025-06-04 20:16:34,890 - data_generator - INFO - Генерация резюме 34/100: resume_034.txt (качество: low)
+2025-06-04 20:16:34,890 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:16:37,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:37,207 - data_generator - INFO - Резюме resume_034.txt сгенерировано за 2.32 секунд
+2025-06-04 20:16:40,219 - data_generator - INFO - Генерация резюме 35/100: resume_035.txt (качество: low)
+2025-06-04 20:16:40,219 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:16:44,260 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:44,261 - data_generator - INFO - Резюме resume_035.txt сгенерировано за 4.04 секунд
+2025-06-04 20:16:47,262 - data_generator - INFO - Генерация резюме 36/100: resume_036.txt (качество: low)
+2025-06-04 20:16:47,262 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:16:51,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:51,989 - data_generator - INFO - Резюме resume_036.txt сгенерировано за 4.73 секунд
+2025-06-04 20:16:55,001 - data_generator - INFO - Генерация резюме 37/100: resume_037.txt (качество: medium)
+2025-06-04 20:16:55,001 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:16:59,590 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:16:59,595 - data_generator - INFO - Резюме resume_037.txt сгенерировано за 4.59 секунд
+2025-06-04 20:17:02,607 - data_generator - INFO - Генерация резюме 38/100: resume_038.txt (качество: low)
+2025-06-04 20:17:02,607 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:17:11,735 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:17:11,740 - data_generator - INFO - Резюме resume_038.txt сгенерировано за 9.13 секунд
+2025-06-04 20:17:14,748 - data_generator - INFO - Генерация резюме 39/100: resume_039.txt (качество: medium)
+2025-06-04 20:17:14,748 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:17:19,546 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:17:19,547 - data_generator - INFO - Резюме resume_039.txt сгенерировано за 4.80 секунд
+2025-06-04 20:17:22,550 - data_generator - INFO - Генерация резюме 40/100: resume_040.txt (качество: medium)
+2025-06-04 20:17:22,550 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:17:27,433 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:17:27,434 - data_generator - INFO - Резюме resume_040.txt сгенерировано за 4.88 секунд
+2025-06-04 20:17:27,434 - data_generator - INFO - Прогресс: 40/100 резюме сгенерировано (40.0%)
+2025-06-04 20:17:30,449 - data_generator - INFO - Генерация резюме 41/100: resume_041.txt (качество: high)
+2025-06-04 20:17:30,449 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:17:42,514 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:17:42,516 - data_generator - INFO - Резюме resume_041.txt сгенерировано за 12.07 секунд
+2025-06-04 20:17:45,521 - data_generator - INFO - Генерация резюме 42/100: resume_042.txt (качество: medium)
+2025-06-04 20:17:45,521 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:17:50,297 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:17:50,298 - data_generator - INFO - Резюме resume_042.txt сгенерировано за 4.78 секунд
+2025-06-04 20:17:53,303 - data_generator - INFO - Генерация резюме 43/100: resume_043.txt (качество: high)
+2025-06-04 20:17:53,303 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:18:02,117 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:02,121 - data_generator - INFO - Резюме resume_043.txt сгенерировано за 8.82 секунд
+2025-06-04 20:18:05,131 - data_generator - INFO - Генерация резюме 44/100: resume_044.txt (качество: medium)
+2025-06-04 20:18:05,131 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:18:09,823 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:09,827 - data_generator - INFO - Резюме resume_044.txt сгенерировано за 4.70 секунд
+2025-06-04 20:18:12,830 - data_generator - INFO - Генерация резюме 45/100: resume_045.txt (качество: medium)
+2025-06-04 20:18:12,830 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:18:17,143 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:17,147 - data_generator - INFO - Резюме resume_045.txt сгенерировано за 4.32 секунд
+2025-06-04 20:18:20,162 - data_generator - INFO - Генерация резюме 46/100: resume_046.txt (качество: low)
+2025-06-04 20:18:20,162 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:18:25,293 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:25,297 - data_generator - INFO - Резюме resume_046.txt сгенерировано за 5.13 секунд
+2025-06-04 20:18:28,309 - data_generator - INFO - Генерация резюме 47/100: resume_047.txt (качество: low)
+2025-06-04 20:18:28,309 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:18:33,619 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:33,630 - data_generator - INFO - Резюме resume_047.txt сгенерировано за 5.32 секунд
+2025-06-04 20:18:36,635 - data_generator - INFO - Генерация резюме 48/100: resume_048.txt (качество: medium)
+2025-06-04 20:18:36,635 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:18:41,041 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:41,047 - data_generator - INFO - Резюме resume_048.txt сгенерировано за 4.41 секунд
+2025-06-04 20:18:44,055 - data_generator - INFO - Генерация резюме 49/100: resume_049.txt (качество: high)
+2025-06-04 20:18:44,055 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:18:49,938 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:49,940 - data_generator - INFO - Резюме resume_049.txt сгенерировано за 5.89 секунд
+2025-06-04 20:18:52,942 - data_generator - INFO - Генерация резюме 50/100: resume_050.txt (качество: medium)
+2025-06-04 20:18:52,942 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:18:56,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:18:56,756 - data_generator - INFO - Резюме resume_050.txt сгенерировано за 3.81 секунд
+2025-06-04 20:18:56,756 - data_generator - INFO - Прогресс: 50/100 резюме сгенерировано (50.0%)
+2025-06-04 20:18:59,769 - data_generator - INFO - Генерация резюме 51/100: resume_051.txt (качество: medium)
+2025-06-04 20:18:59,769 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:19:04,010 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:04,012 - data_generator - INFO - Резюме resume_051.txt сгенерировано за 4.24 секунд
+2025-06-04 20:19:07,028 - data_generator - INFO - Генерация резюме 52/100: resume_052.txt (качество: low)
+2025-06-04 20:19:07,028 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:19:11,261 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:11,263 - data_generator - INFO - Резюме resume_052.txt сгенерировано за 4.24 секунд
+2025-06-04 20:19:14,269 - data_generator - INFO - Генерация резюме 53/100: resume_053.txt (качество: medium)
+2025-06-04 20:19:14,269 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:19:21,469 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:21,474 - data_generator - INFO - Резюме resume_053.txt сгенерировано за 7.21 секунд
+2025-06-04 20:19:24,488 - data_generator - INFO - Генерация резюме 54/100: resume_054.txt (качество: medium)
+2025-06-04 20:19:24,488 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:19:30,513 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:30,514 - data_generator - INFO - Резюме resume_054.txt сгенерировано за 6.03 секунд
+2025-06-04 20:19:33,524 - data_generator - INFO - Генерация резюме 55/100: resume_055.txt (качество: medium)
+2025-06-04 20:19:33,524 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:19:37,319 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:37,320 - data_generator - INFO - Резюме resume_055.txt сгенерировано за 3.80 секунд
+2025-06-04 20:19:40,331 - data_generator - INFO - Генерация резюме 56/100: resume_056.txt (качество: medium)
+2025-06-04 20:19:40,331 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:19:43,997 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:43,999 - data_generator - INFO - Резюме resume_056.txt сгенерировано за 3.67 секунд
+2025-06-04 20:19:47,010 - data_generator - INFO - Генерация резюме 57/100: resume_057.txt (качество: high)
+2025-06-04 20:19:47,010 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:19:49,816 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:19:49,820 - data_generator - INFO - Резюме resume_057.txt сгенерировано за 2.81 секунд
+2025-06-04 20:19:52,827 - data_generator - INFO - Генерация резюме 58/100: resume_058.txt (качество: medium)
+2025-06-04 20:19:52,827 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:20:00,311 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:00,316 - data_generator - INFO - Резюме resume_058.txt сгенерировано за 7.49 секунд
+2025-06-04 20:20:03,331 - data_generator - INFO - Генерация резюме 59/100: resume_059.txt (качество: low)
+2025-06-04 20:20:03,331 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:20:09,807 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:09,809 - data_generator - INFO - Резюме resume_059.txt сгенерировано за 6.48 секунд
+2025-06-04 20:20:12,811 - data_generator - INFO - Генерация резюме 60/100: resume_060.txt (качество: medium)
+2025-06-04 20:20:12,811 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:20:15,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:15,699 - data_generator - INFO - Резюме resume_060.txt сгенерировано за 2.89 секунд
+2025-06-04 20:20:15,700 - data_generator - INFO - Прогресс: 60/100 резюме сгенерировано (60.0%)
+2025-06-04 20:20:18,701 - data_generator - INFO - Генерация резюме 61/100: resume_061.txt (качество: medium)
+2025-06-04 20:20:18,701 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:20:28,269 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:28,271 - data_generator - INFO - Резюме resume_061.txt сгенерировано за 9.57 секунд
+2025-06-04 20:20:31,273 - data_generator - INFO - Генерация резюме 62/100: resume_062.txt (качество: low)
+2025-06-04 20:20:31,273 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:20:34,609 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:34,611 - data_generator - INFO - Резюме resume_062.txt сгенерировано за 3.34 секунд
+2025-06-04 20:20:37,615 - data_generator - INFO - Генерация резюме 63/100: resume_063.txt (качество: low)
+2025-06-04 20:20:37,615 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:20:42,390 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:42,392 - data_generator - INFO - Резюме resume_063.txt сгенерировано за 4.78 секунд
+2025-06-04 20:20:45,393 - data_generator - INFO - Генерация резюме 64/100: resume_064.txt (качество: medium)
+2025-06-04 20:20:45,393 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:20:52,924 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:20:52,926 - data_generator - INFO - Резюме resume_064.txt сгенерировано за 7.53 секунд
+2025-06-04 20:20:55,938 - data_generator - INFO - Генерация резюме 65/100: resume_065.txt (качество: high)
+2025-06-04 20:20:55,938 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:21:00,847 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:00,854 - data_generator - INFO - Резюме resume_065.txt сгенерировано за 4.92 секунд
+2025-06-04 20:21:03,857 - data_generator - INFO - Генерация резюме 66/100: resume_066.txt (качество: medium)
+2025-06-04 20:21:03,857 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:21:10,506 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:10,512 - data_generator - INFO - Резюме resume_066.txt сгенерировано за 6.65 секунд
+2025-06-04 20:21:13,527 - data_generator - INFO - Генерация резюме 67/100: resume_067.txt (качество: medium)
+2025-06-04 20:21:13,527 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:21:19,031 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:19,033 - data_generator - INFO - Резюме resume_067.txt сгенерировано за 5.51 секунд
+2025-06-04 20:21:22,042 - data_generator - INFO - Генерация резюме 68/100: resume_068.txt (качество: medium)
+2025-06-04 20:21:22,042 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:21:25,746 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:25,750 - data_generator - INFO - Резюме resume_068.txt сгенерировано за 3.71 секунд
+2025-06-04 20:21:28,761 - data_generator - INFO - Генерация резюме 69/100: resume_069.txt (качество: high)
+2025-06-04 20:21:28,761 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:21:34,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:34,635 - data_generator - INFO - Резюме resume_069.txt сгенерировано за 5.87 секунд
+2025-06-04 20:21:37,647 - data_generator - INFO - Генерация резюме 70/100: resume_070.txt (качество: low)
+2025-06-04 20:21:37,647 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:21:41,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:41,677 - data_generator - INFO - Резюме resume_070.txt сгенерировано за 4.03 секунд
+2025-06-04 20:21:41,678 - data_generator - INFO - Прогресс: 70/100 резюме сгенерировано (70.0%)
+2025-06-04 20:21:44,681 - data_generator - INFO - Генерация резюме 71/100: resume_071.txt (качество: medium)
+2025-06-04 20:21:44,681 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:21:47,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:47,779 - data_generator - INFO - Резюме resume_071.txt сгенерировано за 3.10 секунд
+2025-06-04 20:21:50,788 - data_generator - INFO - Генерация резюме 72/100: resume_072.txt (качество: low)
+2025-06-04 20:21:50,788 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:21:55,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:21:55,164 - data_generator - INFO - Резюме resume_072.txt сгенерировано за 4.38 секунд
+2025-06-04 20:21:58,175 - data_generator - INFO - Генерация резюме 73/100: resume_073.txt (качество: high)
+2025-06-04 20:21:58,175 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:22:02,959 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:02,960 - data_generator - INFO - Резюме resume_073.txt сгенерировано за 4.79 секунд
+2025-06-04 20:22:05,962 - data_generator - INFO - Генерация резюме 74/100: resume_074.txt (качество: medium)
+2025-06-04 20:22:05,962 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:22:15,918 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:15,923 - data_generator - INFO - Резюме resume_074.txt сгенерировано за 9.96 секунд
+2025-06-04 20:22:18,932 - data_generator - INFO - Генерация резюме 75/100: resume_075.txt (качество: low)
+2025-06-04 20:22:18,932 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:22:21,983 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:21,990 - data_generator - INFO - Резюме resume_075.txt сгенерировано за 3.06 секунд
+2025-06-04 20:22:25,006 - data_generator - INFO - Генерация резюме 76/100: resume_076.txt (качество: medium)
+2025-06-04 20:22:25,006 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:22:29,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:29,386 - data_generator - INFO - Резюме resume_076.txt сгенерировано за 4.38 секунд
+2025-06-04 20:22:32,392 - data_generator - INFO - Генерация резюме 77/100: resume_077.txt (качество: low)
+2025-06-04 20:22:32,392 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:22:35,445 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:35,449 - data_generator - INFO - Резюме resume_077.txt сгенерировано за 3.06 секунд
+2025-06-04 20:22:38,457 - data_generator - INFO - Генерация резюме 78/100: resume_078.txt (качество: medium)
+2025-06-04 20:22:38,457 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:22:45,424 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:45,425 - data_generator - INFO - Резюме resume_078.txt сгенерировано за 6.97 секунд
+2025-06-04 20:22:48,441 - data_generator - INFO - Генерация резюме 79/100: resume_079.txt (качество: low)
+2025-06-04 20:22:48,441 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:22:52,818 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:22:52,820 - data_generator - INFO - Резюме resume_079.txt сгенерировано за 4.38 секунд
+2025-06-04 20:22:55,825 - data_generator - INFO - Генерация резюме 80/100: resume_080.txt (качество: medium)
+2025-06-04 20:22:55,825 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:23:03,920 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:03,922 - data_generator - INFO - Резюме resume_080.txt сгенерировано за 8.10 секунд
+2025-06-04 20:23:03,922 - data_generator - INFO - Прогресс: 80/100 резюме сгенерировано (80.0%)
+2025-06-04 20:23:06,928 - data_generator - INFO - Генерация резюме 81/100: resume_081.txt (качество: low)
+2025-06-04 20:23:06,928 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:23:09,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:09,859 - data_generator - INFO - Резюме resume_081.txt сгенерировано за 2.93 секунд
+2025-06-04 20:23:12,863 - data_generator - INFO - Генерация резюме 82/100: resume_082.txt (качество: medium)
+2025-06-04 20:23:12,863 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:23:16,840 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:16,841 - data_generator - INFO - Резюме resume_082.txt сгенерировано за 3.98 секунд
+2025-06-04 20:23:19,846 - data_generator - INFO - Генерация резюме 83/100: resume_083.txt (качество: medium)
+2025-06-04 20:23:19,846 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:23:28,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:28,910 - data_generator - INFO - Резюме resume_083.txt сгенерировано за 9.06 секунд
+2025-06-04 20:23:31,923 - data_generator - INFO - Генерация резюме 84/100: resume_084.txt (качество: high)
+2025-06-04 20:23:31,923 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:23:38,016 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:38,017 - data_generator - INFO - Резюме resume_084.txt сгенерировано за 6.09 секунд
+2025-06-04 20:23:41,028 - data_generator - INFO - Генерация резюме 85/100: resume_085.txt (качество: medium)
+2025-06-04 20:23:41,028 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:23:44,706 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:44,707 - data_generator - INFO - Резюме resume_085.txt сгенерировано за 3.68 секунд
+2025-06-04 20:23:47,711 - data_generator - INFO - Генерация резюме 86/100: resume_086.txt (качество: low)
+2025-06-04 20:23:47,711 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:23:54,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:23:54,056 - data_generator - INFO - Резюме resume_086.txt сгенерировано за 6.35 секунд
+2025-06-04 20:23:57,071 - data_generator - INFO - Генерация резюме 87/100: resume_087.txt (качество: medium)
+2025-06-04 20:23:57,071 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:24:03,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:03,098 - data_generator - INFO - Резюме resume_087.txt сгенерировано за 6.03 секунд
+2025-06-04 20:24:06,113 - data_generator - INFO - Генерация резюме 88/100: resume_088.txt (качество: high)
+2025-06-04 20:24:06,113 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:24:10,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:10,744 - data_generator - INFO - Резюме resume_088.txt сгенерировано за 4.63 секунд
+2025-06-04 20:24:13,750 - data_generator - INFO - Генерация резюме 89/100: resume_089.txt (качество: medium)
+2025-06-04 20:24:13,750 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:24:19,777 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:19,781 - data_generator - INFO - Резюме resume_089.txt сгенерировано за 6.03 секунд
+2025-06-04 20:24:22,789 - data_generator - INFO - Генерация резюме 90/100: resume_090.txt (качество: medium)
+2025-06-04 20:24:22,789 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:24:25,562 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:25,563 - data_generator - INFO - Резюме resume_090.txt сгенерировано за 2.77 секунд
+2025-06-04 20:24:25,564 - data_generator - INFO - Прогресс: 90/100 резюме сгенерировано (90.0%)
+2025-06-04 20:24:28,570 - data_generator - INFO - Генерация резюме 91/100: resume_091.txt (качество: high)
+2025-06-04 20:24:28,570 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:24:35,560 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:35,564 - data_generator - INFO - Резюме resume_091.txt сгенерировано за 6.99 секунд
+2025-06-04 20:24:38,575 - data_generator - INFO - Генерация резюме 92/100: resume_092.txt (качество: medium)
+2025-06-04 20:24:38,575 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:24:43,718 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:43,719 - data_generator - INFO - Резюме resume_092.txt сгенерировано за 5.14 секунд
+2025-06-04 20:24:46,728 - data_generator - INFO - Генерация резюме 93/100: resume_093.txt (качество: low)
+2025-06-04 20:24:46,728 - llm_interface - INFO - Генерация резюме с уровнем соответствия: low, температура: 0.9
+2025-06-04 20:24:49,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:49,818 - data_generator - INFO - Резюме resume_093.txt сгенерировано за 3.09 секунд
+2025-06-04 20:24:52,832 - data_generator - INFO - Генерация резюме 94/100: resume_094.txt (качество: high)
+2025-06-04 20:24:52,832 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:24:58,229 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:24:58,230 - data_generator - INFO - Резюме resume_094.txt сгенерировано за 5.40 секунд
+2025-06-04 20:25:01,242 - data_generator - INFO - Генерация резюме 95/100: resume_095.txt (качество: medium)
+2025-06-04 20:25:01,242 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:25:05,875 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:05,876 - data_generator - INFO - Резюме resume_095.txt сгенерировано за 4.63 секунд
+2025-06-04 20:25:08,886 - data_generator - INFO - Генерация резюме 96/100: resume_096.txt (качество: high)
+2025-06-04 20:25:08,886 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:25:13,882 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:13,882 - data_generator - INFO - Резюме resume_096.txt сгенерировано за 5.00 секунд
+2025-06-04 20:25:16,888 - data_generator - INFO - Генерация резюме 97/100: resume_097.txt (качество: high)
+2025-06-04 20:25:16,888 - llm_interface - INFO - Генерация резюме с уровнем соответствия: high, температура: 0.5
+2025-06-04 20:25:24,737 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:24,740 - data_generator - INFO - Резюме resume_097.txt сгенерировано за 7.85 секунд
+2025-06-04 20:25:27,755 - data_generator - INFO - Генерация резюме 98/100: resume_098.txt (качество: medium)
+2025-06-04 20:25:27,755 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:25:33,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:33,386 - data_generator - INFO - Резюме resume_098.txt сгенерировано за 5.63 секунд
+2025-06-04 20:25:36,389 - data_generator - INFO - Генерация резюме 99/100: resume_099.txt (качество: medium)
+2025-06-04 20:25:36,389 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:25:40,063 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:40,064 - data_generator - INFO - Резюме resume_099.txt сгенерировано за 3.67 секунд
+2025-06-04 20:25:43,067 - data_generator - INFO - Генерация резюме 100/100: resume_100.txt (качество: medium)
+2025-06-04 20:25:43,067 - llm_interface - INFO - Генерация резюме с уровнем соответствия: medium, температура: 0.7
+2025-06-04 20:25:47,941 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:47,944 - data_generator - INFO - Резюме resume_100.txt сгенерировано за 4.88 секунд
+2025-06-04 20:25:47,945 - data_generator - INFO - Прогресс: 100/100 резюме сгенерировано (100.0%)
+2025-06-04 20:25:50,951 - data_generator - INFO - Сгенерировано 100 из 100 резюме в директории: C:\Users\HP\PycharmProjects\hh_test_task\resume_analyzer\data\resumes
+2025-06-04 20:25:50,951 - data_generator - INFO - Общее время генерации: 817.78 секунд (в среднем 8.18 секунд на резюме)
+2025-06-04 20:25:50,951 - data_generator - INFO - Статистика генерации сохранена в файл: data\resumes\generation_stats.txt
+2025-06-04 20:25:50,952 - __main__ - INFO - Сгенерировано 100 резюме
+2025-06-04 20:25:50,952 - __main__ - INFO - Начало анализа резюме...
+2025-06-04 20:25:50,953 - __main__ - INFO - Анализ резюме 1/100: resume_001.txt
+2025-06-04 20:25:50,953 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:25:50,953 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:25:53,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:53,929 - analyzer - INFO - Анализ резюме выполнен за 2.98 секунд. Оценка: 7/10
+2025-06-04 20:25:56,935 - __main__ - INFO - Анализ резюме 2/100: resume_002.txt
+2025-06-04 20:25:56,935 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:25:56,935 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:25:58,768 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:25:58,772 - analyzer - INFO - Анализ резюме выполнен за 1.84 секунд. Оценка: 7/10
+2025-06-04 20:26:01,784 - __main__ - INFO - Анализ резюме 3/100: resume_003.txt
+2025-06-04 20:26:01,784 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:01,784 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:04,078 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:04,079 - analyzer - INFO - Анализ резюме выполнен за 2.30 секунд. Оценка: 7/10
+2025-06-04 20:26:07,088 - __main__ - INFO - Анализ резюме 4/100: resume_004.txt
+2025-06-04 20:26:07,088 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:07,088 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:10,067 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:10,070 - analyzer - INFO - Анализ резюме выполнен за 2.98 секунд. Оценка: 9/10
+2025-06-04 20:26:13,079 - __main__ - INFO - Анализ резюме 5/100: resume_005.txt
+2025-06-04 20:26:13,079 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:13,079 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:15,998 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:15,998 - analyzer - INFO - Анализ резюме выполнен за 2.92 секунд. Оценка: 8/10
+2025-06-04 20:26:19,001 - __main__ - INFO - Анализ резюме 6/100: resume_006.txt
+2025-06-04 20:26:19,001 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:19,001 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:22,768 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:22,770 - analyzer - INFO - Анализ резюме выполнен за 3.77 секунд. Оценка: 8/10
+2025-06-04 20:26:25,781 - __main__ - INFO - Анализ резюме 7/100: resume_007.txt
+2025-06-04 20:26:25,781 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:25,781 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:27,813 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:27,824 - analyzer - INFO - Анализ резюме выполнен за 2.04 секунд. Оценка: 8/10
+2025-06-04 20:26:30,836 - __main__ - INFO - Анализ резюме 8/100: resume_008.txt
+2025-06-04 20:26:30,836 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:30,836 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:35,412 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:35,414 - analyzer - INFO - Анализ резюме выполнен за 4.58 секунд. Оценка: 7/10
+2025-06-04 20:26:38,420 - __main__ - INFO - Анализ резюме 9/100: resume_009.txt
+2025-06-04 20:26:38,420 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:38,420 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:43,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:43,759 - analyzer - INFO - Анализ резюме выполнен за 5.34 секунд. Оценка: 8/10
+2025-06-04 20:26:46,761 - __main__ - INFO - Анализ резюме 10/100: resume_010.txt
+2025-06-04 20:26:46,761 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:46,761 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:50,789 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:50,794 - analyzer - INFO - Анализ резюме выполнен за 4.03 секунд. Оценка: 7/10
+2025-06-04 20:26:53,803 - __main__ - INFO - Анализ резюме 11/100: resume_011.txt
+2025-06-04 20:26:53,803 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:53,803 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:26:56,417 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:26:56,418 - analyzer - INFO - Анализ резюме выполнен за 2.61 секунд. Оценка: 7/10
+2025-06-04 20:26:59,428 - __main__ - INFO - Анализ резюме 12/100: resume_012.txt
+2025-06-04 20:26:59,428 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:26:59,428 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:02,081 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:02,086 - analyzer - INFO - Анализ резюме выполнен за 2.66 секунд. Оценка: 8/10
+2025-06-04 20:27:05,089 - __main__ - INFO - Анализ резюме 13/100: resume_013.txt
+2025-06-04 20:27:05,089 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:05,089 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:07,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:07,985 - analyzer - INFO - Анализ резюме выполнен за 2.90 секунд. Оценка: 9/10
+2025-06-04 20:27:10,990 - __main__ - INFO - Анализ резюме 14/100: resume_014.txt
+2025-06-04 20:27:10,990 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:10,990 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:13,946 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:13,947 - analyzer - INFO - Анализ резюме выполнен за 2.96 секунд. Оценка: 7/10
+2025-06-04 20:27:16,950 - __main__ - INFO - Анализ резюме 15/100: resume_015.txt
+2025-06-04 20:27:16,950 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:16,950 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:20,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:20,762 - analyzer - INFO - Анализ резюме выполнен за 3.81 секунд. Оценка: 8/10
+2025-06-04 20:27:23,768 - __main__ - INFO - Анализ резюме 16/100: resume_016.txt
+2025-06-04 20:27:23,768 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:23,768 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:25,803 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:25,823 - analyzer - INFO - Анализ резюме выполнен за 2.06 секунд. Оценка: 8/10
+2025-06-04 20:27:28,836 - __main__ - INFO - Анализ резюме 17/100: resume_017.txt
+2025-06-04 20:27:28,836 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:28,836 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:31,649 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:31,650 - analyzer - INFO - Анализ резюме выполнен за 2.81 секунд. Оценка: 6/10
+2025-06-04 20:27:34,659 - __main__ - INFO - Анализ резюме 18/100: resume_018.txt
+2025-06-04 20:27:34,659 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:34,659 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:40,057 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:40,060 - analyzer - INFO - Анализ резюме выполнен за 5.40 секунд. Оценка: 8/10
+2025-06-04 20:27:43,063 - __main__ - INFO - Анализ резюме 19/100: resume_019.txt
+2025-06-04 20:27:43,063 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:43,063 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:45,511 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:45,512 - analyzer - INFO - Анализ резюме выполнен за 2.45 секунд. Оценка: 8/10
+2025-06-04 20:27:48,526 - __main__ - INFO - Анализ резюме 20/100: resume_020.txt
+2025-06-04 20:27:48,526 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:48,526 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:50,867 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:50,870 - analyzer - INFO - Анализ резюме выполнен за 2.34 секунд. Оценка: 8/10
+2025-06-04 20:27:53,872 - __main__ - INFO - Анализ резюме 21/100: resume_021.txt
+2025-06-04 20:27:53,872 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:27:53,872 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:27:57,045 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:27:57,046 - analyzer - INFO - Анализ резюме выполнен за 3.17 секунд. Оценка: 7/10
+2025-06-04 20:28:00,047 - __main__ - INFO - Анализ резюме 22/100: resume_022.txt
+2025-06-04 20:28:00,047 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:00,047 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:04,735 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:04,740 - analyzer - INFO - Анализ резюме выполнен за 4.69 секунд. Оценка: 7/10
+2025-06-04 20:28:07,750 - __main__ - INFO - Анализ резюме 23/100: resume_023.txt
+2025-06-04 20:28:07,750 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:07,750 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:10,266 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:10,267 - analyzer - INFO - Анализ резюме выполнен за 2.52 секунд. Оценка: 8/10
+2025-06-04 20:28:13,272 - __main__ - INFO - Анализ резюме 24/100: resume_024.txt
+2025-06-04 20:28:13,272 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:13,272 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:16,117 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:16,126 - analyzer - INFO - Анализ резюме выполнен за 2.85 секунд. Оценка: 8/10
+2025-06-04 20:28:19,130 - __main__ - INFO - Анализ резюме 25/100: resume_025.txt
+2025-06-04 20:28:19,130 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:19,130 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:20,971 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:20,972 - analyzer - INFO - Анализ резюме выполнен за 1.84 секунд. Оценка: 4/10
+2025-06-04 20:28:23,985 - __main__ - INFO - Анализ резюме 26/100: resume_026.txt
+2025-06-04 20:28:23,985 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:23,985 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:28,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:28,755 - analyzer - INFO - Анализ резюме выполнен за 4.77 секунд. Оценка: 7/10
+2025-06-04 20:28:31,759 - __main__ - INFO - Анализ резюме 27/100: resume_027.txt
+2025-06-04 20:28:31,759 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:31,759 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:34,694 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:34,694 - analyzer - INFO - Анализ резюме выполнен за 2.94 секунд. Оценка: 8/10
+2025-06-04 20:28:37,699 - __main__ - INFO - Анализ резюме 28/100: resume_028.txt
+2025-06-04 20:28:37,699 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:37,699 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:41,834 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:41,838 - analyzer - INFO - Анализ резюме выполнен за 4.14 секунд. Оценка: 4/10
+2025-06-04 20:28:44,847 - __main__ - INFO - Анализ резюме 29/100: resume_029.txt
+2025-06-04 20:28:44,847 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:44,847 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:46,925 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:46,928 - analyzer - INFO - Анализ резюме выполнен за 2.08 секунд. Оценка: 8/10
+2025-06-04 20:28:49,934 - __main__ - INFO - Анализ резюме 30/100: resume_030.txt
+2025-06-04 20:28:49,934 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:49,934 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:52,363 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:52,369 - analyzer - INFO - Анализ резюме выполнен за 2.44 секунд. Оценка: 8/10
+2025-06-04 20:28:55,371 - __main__ - INFO - Анализ резюме 31/100: resume_031.txt
+2025-06-04 20:28:55,371 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:28:55,371 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:28:58,224 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:28:58,226 - analyzer - INFO - Анализ резюме выполнен за 2.86 секунд. Оценка: 5/10
+2025-06-04 20:29:01,228 - __main__ - INFO - Анализ резюме 32/100: resume_032.txt
+2025-06-04 20:29:01,228 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:01,228 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:03,566 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:03,567 - analyzer - INFO - Анализ резюме выполнен за 2.34 секунд. Оценка: 7/10
+2025-06-04 20:29:06,572 - __main__ - INFO - Анализ резюме 33/100: resume_033.txt
+2025-06-04 20:29:06,572 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:06,572 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:08,939 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:08,943 - analyzer - INFO - Анализ резюме выполнен за 2.37 секунд. Оценка: 8/10
+2025-06-04 20:29:11,944 - __main__ - INFO - Анализ резюме 34/100: resume_034.txt
+2025-06-04 20:29:11,944 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:11,944 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:14,032 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:14,033 - analyzer - INFO - Анализ резюме выполнен за 2.09 секунд. Оценка: 6/10
+2025-06-04 20:29:17,042 - __main__ - INFO - Анализ резюме 35/100: resume_035.txt
+2025-06-04 20:29:17,042 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:17,042 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:19,204 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:19,205 - analyzer - INFO - Анализ резюме выполнен за 2.16 секунд. Оценка: 7/10
+2025-06-04 20:29:22,211 - __main__ - INFO - Анализ резюме 36/100: resume_036.txt
+2025-06-04 20:29:22,211 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:22,211 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:25,727 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:25,731 - analyzer - INFO - Анализ резюме выполнен за 3.52 секунд. Оценка: 8/10
+2025-06-04 20:29:28,736 - __main__ - INFO - Анализ резюме 37/100: resume_037.txt
+2025-06-04 20:29:28,736 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:28,736 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:33,055 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:33,056 - analyzer - INFO - Анализ резюме выполнен за 4.32 секунд. Оценка: 8/10
+2025-06-04 20:29:36,069 - __main__ - INFO - Анализ резюме 38/100: resume_038.txt
+2025-06-04 20:29:36,069 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:36,069 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:38,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:38,168 - analyzer - INFO - Анализ резюме выполнен за 2.10 секунд. Оценка: 7/10
+2025-06-04 20:29:41,174 - __main__ - INFO - Анализ резюме 39/100: resume_039.txt
+2025-06-04 20:29:41,174 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:41,174 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:42,808 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:42,809 - analyzer - INFO - Анализ резюме выполнен за 1.63 секунд. Оценка: 7/10
+2025-06-04 20:29:45,810 - __main__ - INFO - Анализ резюме 40/100: resume_040.txt
+2025-06-04 20:29:45,810 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:45,810 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:49,272 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:49,280 - analyzer - INFO - Анализ резюме выполнен за 3.47 секунд. Оценка: 8/10
+2025-06-04 20:29:52,290 - __main__ - INFO - Анализ резюме 41/100: resume_041.txt
+2025-06-04 20:29:52,290 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:52,290 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:29:54,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:29:54,057 - analyzer - INFO - Анализ резюме выполнен за 1.77 секунд. Оценка: 9/10
+2025-06-04 20:29:57,062 - __main__ - INFO - Анализ резюме 42/100: resume_042.txt
+2025-06-04 20:29:57,062 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:29:57,062 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:00,847 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:00,848 - analyzer - INFO - Анализ резюме выполнен за 3.79 секунд. Оценка: 8/10
+2025-06-04 20:30:03,854 - __main__ - INFO - Анализ резюме 43/100: resume_043.txt
+2025-06-04 20:30:03,854 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:03,854 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:07,339 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:07,340 - analyzer - INFO - Анализ резюме выполнен за 3.49 секунд. Оценка: 9/10
+2025-06-04 20:30:10,346 - __main__ - INFO - Анализ резюме 44/100: resume_044.txt
+2025-06-04 20:30:10,346 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:10,346 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:15,662 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:15,669 - analyzer - INFO - Анализ резюме выполнен за 5.32 секунд. Оценка: 7/10
+2025-06-04 20:30:18,675 - __main__ - INFO - Анализ резюме 45/100: resume_045.txt
+2025-06-04 20:30:18,675 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:18,675 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:20,910 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:20,913 - analyzer - INFO - Анализ резюме выполнен за 2.24 секунд. Оценка: 8/10
+2025-06-04 20:30:23,915 - __main__ - INFO - Анализ резюме 46/100: resume_046.txt
+2025-06-04 20:30:23,915 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:23,915 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:26,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:26,174 - analyzer - INFO - Анализ резюме выполнен за 2.26 секунд. Оценка: 7/10
+2025-06-04 20:30:29,185 - __main__ - INFO - Анализ резюме 47/100: resume_047.txt
+2025-06-04 20:30:29,185 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:29,185 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:31,687 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:31,688 - analyzer - INFO - Анализ резюме выполнен за 2.50 секунд. Оценка: 6/10
+2025-06-04 20:30:34,694 - __main__ - INFO - Анализ резюме 48/100: resume_048.txt
+2025-06-04 20:30:34,694 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:34,694 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:38,974 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:38,975 - analyzer - INFO - Анализ резюме выполнен за 4.28 секунд. Оценка: 8/10
+2025-06-04 20:30:41,977 - __main__ - INFO - Анализ резюме 49/100: resume_049.txt
+2025-06-04 20:30:41,978 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:41,978 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:44,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:44,213 - analyzer - INFO - Анализ резюме выполнен за 2.23 секунд. Оценка: 8/10
+2025-06-04 20:30:47,227 - __main__ - INFO - Анализ резюме 50/100: resume_050.txt
+2025-06-04 20:30:47,227 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:47,227 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:49,913 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:49,913 - analyzer - INFO - Анализ резюме выполнен за 2.69 секунд. Оценка: 8/10
+2025-06-04 20:30:52,913 - __main__ - INFO - Анализ резюме 51/100: resume_051.txt
+2025-06-04 20:30:52,913 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:52,913 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:30:55,153 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:30:55,160 - analyzer - INFO - Анализ резюме выполнен за 2.25 секунд. Оценка: 8/10
+2025-06-04 20:30:58,168 - __main__ - INFO - Анализ резюме 52/100: resume_052.txt
+2025-06-04 20:30:58,168 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:30:58,168 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:01,975 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:01,986 - analyzer - INFO - Анализ резюме выполнен за 3.82 секунд. Оценка: 5/10
+2025-06-04 20:31:04,999 - __main__ - INFO - Анализ резюме 53/100: resume_053.txt
+2025-06-04 20:31:04,999 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:04,999 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:07,410 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:07,411 - analyzer - INFO - Анализ резюме выполнен за 2.41 секунд. Оценка: 7/10
+2025-06-04 20:31:10,416 - __main__ - INFO - Анализ резюме 54/100: resume_054.txt
+2025-06-04 20:31:10,416 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:10,416 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:12,840 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:12,843 - analyzer - INFO - Анализ резюме выполнен за 2.43 секунд. Оценка: 8/10
+2025-06-04 20:31:15,847 - __main__ - INFO - Анализ резюме 55/100: resume_055.txt
+2025-06-04 20:31:15,847 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:15,847 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:20,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:20,016 - analyzer - INFO - Анализ резюме выполнен за 4.17 секунд. Оценка: 8/10
+2025-06-04 20:31:23,024 - __main__ - INFO - Анализ резюме 56/100: resume_056.txt
+2025-06-04 20:31:23,024 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:23,024 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:25,075 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:25,079 - analyzer - INFO - Анализ резюме выполнен за 2.06 секунд. Оценка: 8/10
+2025-06-04 20:31:28,083 - __main__ - INFO - Анализ резюме 57/100: resume_057.txt
+2025-06-04 20:31:28,083 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:28,083 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:30,532 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:30,532 - analyzer - INFO - Анализ резюме выполнен за 2.45 секунд. Оценка: 8/10
+2025-06-04 20:31:33,544 - __main__ - INFO - Анализ резюме 58/100: resume_058.txt
+2025-06-04 20:31:33,544 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:33,544 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:35,987 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:35,996 - analyzer - INFO - Анализ резюме выполнен за 2.45 секунд. Оценка: 8/10
+2025-06-04 20:31:39,001 - __main__ - INFO - Анализ резюме 59/100: resume_059.txt
+2025-06-04 20:31:39,001 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:39,001 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:40,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:40,818 - analyzer - INFO - Анализ резюме выполнен за 1.82 секунд. Оценка: 7/10
+2025-06-04 20:31:43,828 - __main__ - INFO - Анализ резюме 60/100: resume_060.txt
+2025-06-04 20:31:43,828 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:43,828 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:46,057 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:46,061 - analyzer - INFO - Анализ резюме выполнен за 2.23 секунд. Оценка: 7/10
+2025-06-04 20:31:49,075 - __main__ - INFO - Анализ резюме 61/100: resume_061.txt
+2025-06-04 20:31:49,075 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:49,075 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:51,650 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:51,651 - analyzer - INFO - Анализ резюме выполнен за 2.58 секунд. Оценка: 8/10
+2025-06-04 20:31:54,657 - __main__ - INFO - Анализ резюме 62/100: resume_062.txt
+2025-06-04 20:31:54,657 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:31:54,657 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:31:57,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:31:57,015 - analyzer - INFO - Анализ резюме выполнен за 2.36 секунд. Оценка: 8/10
+2025-06-04 20:32:00,019 - __main__ - INFO - Анализ резюме 63/100: resume_063.txt
+2025-06-04 20:32:00,019 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:00,019 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:03,424 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:03,425 - analyzer - INFO - Анализ резюме выполнен за 3.41 секунд. Оценка: 3/10
+2025-06-04 20:32:06,426 - __main__ - INFO - Анализ резюме 64/100: resume_064.txt
+2025-06-04 20:32:06,426 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:06,426 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:10,272 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:10,274 - analyzer - INFO - Анализ резюме выполнен за 3.85 секунд. Оценка: 7/10
+2025-06-04 20:32:13,277 - __main__ - INFO - Анализ резюме 65/100: resume_065.txt
+2025-06-04 20:32:13,277 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:13,277 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:17,632 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:17,634 - analyzer - INFO - Анализ резюме выполнен за 4.36 секунд. Оценка: 8/10
+2025-06-04 20:32:20,638 - __main__ - INFO - Анализ резюме 66/100: resume_066.txt
+2025-06-04 20:32:20,638 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:20,638 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:26,071 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:26,072 - analyzer - INFO - Анализ резюме выполнен за 5.43 секунд. Оценка: 7/10
+2025-06-04 20:32:29,086 - __main__ - INFO - Анализ резюме 67/100: resume_067.txt
+2025-06-04 20:32:29,086 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:29,086 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:32,144 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:32,145 - analyzer - INFO - Анализ резюме выполнен за 3.06 секунд. Оценка: 9/10
+2025-06-04 20:32:35,159 - __main__ - INFO - Анализ резюме 68/100: resume_068.txt
+2025-06-04 20:32:35,159 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:35,159 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:37,638 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:37,641 - analyzer - INFO - Анализ резюме выполнен за 2.48 секунд. Оценка: 8/10
+2025-06-04 20:32:40,653 - __main__ - INFO - Анализ резюме 69/100: resume_069.txt
+2025-06-04 20:32:40,653 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:40,653 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:42,803 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:42,806 - analyzer - INFO - Анализ резюме выполнен за 2.15 секунд. Оценка: 8/10
+2025-06-04 20:32:45,814 - __main__ - INFO - Анализ резюме 70/100: resume_070.txt
+2025-06-04 20:32:45,814 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:45,814 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:48,418 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:48,419 - analyzer - INFO - Анализ резюме выполнен за 2.61 секунд. Оценка: 6/10
+2025-06-04 20:32:51,429 - __main__ - INFO - Анализ резюме 71/100: resume_071.txt
+2025-06-04 20:32:51,429 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:51,429 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:32:56,330 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:32:56,335 - analyzer - INFO - Анализ резюме выполнен за 4.91 секунд. Оценка: 7/10
+2025-06-04 20:32:59,340 - __main__ - INFO - Анализ резюме 72/100: resume_072.txt
+2025-06-04 20:32:59,340 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:32:59,340 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:01,551 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:01,553 - analyzer - INFO - Анализ резюме выполнен за 2.21 секунд. Оценка: 7/10
+2025-06-04 20:33:04,562 - __main__ - INFO - Анализ резюме 73/100: resume_073.txt
+2025-06-04 20:33:04,562 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:04,562 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:08,395 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:08,396 - analyzer - INFO - Анализ резюме выполнен за 3.83 секунд. Оценка: 9/10
+2025-06-04 20:33:11,403 - __main__ - INFO - Анализ резюме 74/100: resume_074.txt
+2025-06-04 20:33:11,403 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:11,403 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:13,785 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:13,790 - analyzer - INFO - Анализ резюме выполнен за 2.39 секунд. Оценка: 8/10
+2025-06-04 20:33:16,802 - __main__ - INFO - Анализ резюме 75/100: resume_075.txt
+2025-06-04 20:33:16,802 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:16,803 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:19,725 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:19,728 - analyzer - INFO - Анализ резюме выполнен за 2.92 секунд. Оценка: 7/10
+2025-06-04 20:33:22,737 - __main__ - INFO - Анализ резюме 76/100: resume_076.txt
+2025-06-04 20:33:22,737 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:22,737 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:25,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:25,618 - analyzer - INFO - Анализ резюме выполнен за 2.88 секунд. Оценка: 7/10
+2025-06-04 20:33:28,629 - __main__ - INFO - Анализ резюме 77/100: resume_077.txt
+2025-06-04 20:33:28,629 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:28,629 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:31,102 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:31,103 - analyzer - INFO - Анализ резюме выполнен за 2.47 секунд. Оценка: 7/10
+2025-06-04 20:33:34,112 - __main__ - INFO - Анализ резюме 78/100: resume_078.txt
+2025-06-04 20:33:34,112 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:34,112 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:36,917 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:36,921 - analyzer - INFO - Анализ резюме выполнен за 2.81 секунд. Оценка: 8/10
+2025-06-04 20:33:39,931 - __main__ - INFO - Анализ резюме 79/100: resume_079.txt
+2025-06-04 20:33:39,931 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:39,931 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:44,514 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:44,516 - analyzer - INFO - Анализ резюме выполнен за 4.58 секунд. Оценка: 6/10
+2025-06-04 20:33:47,524 - __main__ - INFO - Анализ резюме 80/100: resume_080.txt
+2025-06-04 20:33:47,524 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:47,524 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:50,106 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:50,108 - analyzer - INFO - Анализ резюме выполнен за 2.58 секунд. Оценка: 9/10
+2025-06-04 20:33:53,121 - __main__ - INFO - Анализ резюме 81/100: resume_081.txt
+2025-06-04 20:33:53,121 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:53,121 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:33:54,801 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:33:54,804 - analyzer - INFO - Анализ резюме выполнен за 1.68 секунд. Оценка: 7/10
+2025-06-04 20:33:57,805 - __main__ - INFO - Анализ резюме 82/100: resume_082.txt
+2025-06-04 20:33:57,805 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:33:57,805 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:01,860 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:01,862 - analyzer - INFO - Анализ резюме выполнен за 4.06 секунд. Оценка: 8/10
+2025-06-04 20:34:04,866 - __main__ - INFO - Анализ резюме 83/100: resume_083.txt
+2025-06-04 20:34:04,866 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:04,866 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:08,705 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:08,706 - analyzer - INFO - Анализ резюме выполнен за 3.84 секунд. Оценка: 8/10
+2025-06-04 20:34:11,710 - __main__ - INFO - Анализ резюме 84/100: resume_084.txt
+2025-06-04 20:34:11,710 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:11,710 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:15,585 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:15,588 - analyzer - INFO - Анализ резюме выполнен за 3.88 секунд. Оценка: 8/10
+2025-06-04 20:34:18,593 - __main__ - INFO - Анализ резюме 85/100: resume_085.txt
+2025-06-04 20:34:18,593 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:18,593 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:21,182 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:21,186 - analyzer - INFO - Анализ резюме выполнен за 2.59 секунд. Оценка: 7/10
+2025-06-04 20:34:24,195 - __main__ - INFO - Анализ резюме 86/100: resume_086.txt
+2025-06-04 20:34:24,196 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:24,196 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:26,254 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:26,258 - analyzer - INFO - Анализ резюме выполнен за 2.06 секунд. Оценка: 6/10
+2025-06-04 20:34:29,264 - __main__ - INFO - Анализ резюме 87/100: resume_087.txt
+2025-06-04 20:34:29,264 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:29,264 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:31,791 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:31,791 - analyzer - INFO - Анализ резюме выполнен за 2.53 секунд. Оценка: 8/10
+2025-06-04 20:34:34,795 - __main__ - INFO - Анализ резюме 88/100: resume_088.txt
+2025-06-04 20:34:34,795 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:34,795 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:37,296 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:37,299 - analyzer - INFO - Анализ резюме выполнен за 2.50 секунд. Оценка: 9/10
+2025-06-04 20:34:40,305 - __main__ - INFO - Анализ резюме 89/100: resume_089.txt
+2025-06-04 20:34:40,305 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:40,305 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:43,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:43,053 - analyzer - INFO - Анализ резюме выполнен за 2.75 секунд. Оценка: 7/10
+2025-06-04 20:34:46,066 - __main__ - INFO - Анализ резюме 90/100: resume_090.txt
+2025-06-04 20:34:46,066 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:46,066 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:48,659 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:48,665 - analyzer - INFO - Анализ резюме выполнен за 2.60 секунд. Оценка: 8/10
+2025-06-04 20:34:51,679 - __main__ - INFO - Анализ резюме 91/100: resume_091.txt
+2025-06-04 20:34:51,679 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:51,679 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:54,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:54,056 - analyzer - INFO - Анализ резюме выполнен за 2.38 секунд. Оценка: 8/10
+2025-06-04 20:34:57,061 - __main__ - INFO - Анализ резюме 92/100: resume_092.txt
+2025-06-04 20:34:57,061 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:34:57,061 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:34:59,506 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:34:59,506 - analyzer - INFO - Анализ резюме выполнен за 2.45 секунд. Оценка: 9/10
+2025-06-04 20:35:02,511 - __main__ - INFO - Анализ резюме 93/100: resume_093.txt
+2025-06-04 20:35:02,511 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:02,512 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:04,761 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:04,763 - analyzer - INFO - Анализ резюме выполнен за 2.25 секунд. Оценка: 7/10
+2025-06-04 20:35:07,772 - __main__ - INFO - Анализ резюме 94/100: resume_094.txt
+2025-06-04 20:35:07,772 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:07,772 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:10,762 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:10,763 - analyzer - INFO - Анализ резюме выполнен за 2.99 секунд. Оценка: 8/10
+2025-06-04 20:35:13,768 - __main__ - INFO - Анализ резюме 95/100: resume_095.txt
+2025-06-04 20:35:13,768 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:13,768 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:16,267 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:16,268 - analyzer - INFO - Анализ резюме выполнен за 2.50 секунд. Оценка: 8/10
+2025-06-04 20:35:19,271 - __main__ - INFO - Анализ резюме 96/100: resume_096.txt
+2025-06-04 20:35:19,271 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:19,271 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:23,493 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:23,502 - analyzer - INFO - Анализ резюме выполнен за 4.23 секунд. Оценка: 8/10
+2025-06-04 20:35:26,511 - __main__ - INFO - Анализ резюме 97/100: resume_097.txt
+2025-06-04 20:35:26,511 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:26,511 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:28,764 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:28,772 - analyzer - INFO - Анализ резюме выполнен за 2.26 секунд. Оценка: 8/10
+2025-06-04 20:35:31,779 - __main__ - INFO - Анализ резюме 98/100: resume_098.txt
+2025-06-04 20:35:31,779 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:31,779 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:35,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:35,007 - analyzer - INFO - Анализ резюме выполнен за 3.23 секунд. Оценка: 8/10
+2025-06-04 20:35:38,020 - __main__ - INFO - Анализ резюме 99/100: resume_099.txt
+2025-06-04 20:35:38,020 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:38,020 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:41,657 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:41,660 - analyzer - INFO - Анализ резюме выполнен за 3.64 секунд. Оценка: 7/10
+2025-06-04 20:35:44,666 - __main__ - INFO - Анализ резюме 100/100: resume_100.txt
+2025-06-04 20:35:44,666 - analyzer - INFO - Анализ соответствия резюме вакансии
+2025-06-04 20:35:44,666 - llm_interface - INFO - Анализ соответствия резюме вакансии с помощью OpenAI API...
+2025-06-04 20:35:46,706 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 20:35:46,710 - analyzer - INFO - Анализ резюме выполнен за 2.04 секунд. Оценка: 9/10
+2025-06-04 20:35:49,713 - __main__ - INFO - ЛУЧШИЙ КАНДИДАТ: resume_004.txt с оценкой 9.00/10
+2025-06-04 20:35:49,717 - __main__ - INFO - Подробные результаты анализа:
+
+================================================================================
+ЛУЧШИЙ КАНДИДАТ: resume_004.txt
+Оценка: 9.00/10
+Обоснование: Резюме кандидата соответствует требованиям вакансии на 90%. Кандидат имеет опыт работы более 2 лет на позиции Python-разработчика, глубокие знания Python и опыт работы с фреймворками Django и Flask, опыт работы с базами данных PostgreSQL и MySQL, знание принципов ООП и паттернов проектирования, оптимизация кода и работа с большими объемами данных. Дополнительно кандидат владеет английским языком на уровне Upper-Intermediate и имеет сертификат по курсу 'Основы веб-разработки'. Единственным недостатком является отсутствие у кандидата опыта работы с JavaScript, HTML, CSS для разработки веб-приложений, что является желательным требованием вакансии.
+================================================================================
+
+ТОП-5 КАНДИДАТОВ:
+--------------------------------------------------------------------------------
+1. resume_004.txt
+   Оценка: 9.00/10
+   Обоснование: Резюме кандидата соответствует требованиям вакансии на 90%. Кандидат имеет опыт работы более 2 лет на позиции Python-разработчика, глубокие знания Python и опыт работы с фреймворками Django и Flask, опыт работы с базами данных PostgreSQL и MySQL, знание принципов ООП и паттернов проектирования, оптимизация кода и работа с большими объемами данных. Дополнительно кандидат владеет английским языком на уровне Upper-Intermediate и имеет сертификат по курсу 'Основы веб-разработки'. Единственным недостатком является отсутствие у кандидата опыта работы с JavaScript, HTML, CSS для разработки веб-приложений, что является желательным требованием вакансии.
+--------------------------------------------------------------------------------
+2. resume_013.txt
+   Оценка: 9.00/10
+   Обоснование: Резюме кандидата соответствует требованиям вакансии на высоком уровне. Кандидат имеет опыт работы на позиции Python-разработчика более 2 лет, глубокие знания Python и фреймворков Django и Flask, опыт работы с базами данных PostgreSQL и MySQL, а также дополнительные навыки веб-разработки. Единственным небольшим недостатком может быть отсутствие упоминания опыта работы с большими объемами данных, но это компенсируется общим опытом и знаниями кандидата.
+--------------------------------------------------------------------------------
+3. resume_041.txt
+   Оценка: 9.00/10
+   Обоснование: Резюме кандидата Иванова Ивана Ивановича соответствует вакансии Python-разработчика на высоком уровне. У него есть опыт работы в данной области, глубокие знания Python и фреймворков, опыт работы с базами данных. Небольшим недостатком является отсутствие опыта работы с JavaScript, HTML, CSS, но это может быть компенсировано быстрым обучением и желанием развиваться в данном направлении.
+--------------------------------------------------------------------------------
+4. resume_043.txt
+   Оценка: 9.00/10
+   Обоснование: Резюме кандидата почти идеально соответствует требованиям вакансии Python-разработчика. Кандидат имеет более 2-летний опыт работы, глубокие знания Python, опыт работы с фреймворками Django и Flask, базами данных PostgreSQL и MySQL, а также понимание принципов ООП и паттернов проектирования. Он также обладает базовыми знаниями веб-технологий и языка программирования JavaScript. Единственным небольшим недостатком является отсутствие опыта работы с MySQL, но это компенсируется общим опытом и знаниями кандидата.
+--------------------------------------------------------------------------------
+5. resume_067.txt
+   Оценка: 9.00/10
+   Обоснование: Резюме кандидата соответствует требованиям вакансии на 90%. Кандидат имеет опыт работы на позиции Python-разработчика, глубокие знания Python с опытом работы с Django и Flask, опыт работы с PostgreSQL и MySQL, знание принципов ООП и паттернов проектирования. Также кандидат имеет опыт разработки веб-приложений с использованием JavaScript, HTML, CSS. Слабой стороной может быть отсутствие упоминания опыта работы с командами для достижения поставленных целей, но это может быть компенсировано на собеседовании.
+--------------------------------------------------------------------------------
+
+2025-06-04 20:35:49,720 - __main__ - INFO - Результаты сохранены в Markdown-файл: C:\Users\HP\PycharmProjects\hh_test_task\resume_analyzer\results.md
+2025-06-04 20:35:49,721 - __main__ - INFO - Результаты сохранены в JSON-файл: C:\Users\HP\PycharmProjects\hh_test_task\resume_analyzer\results.json
+2025-06-04 20:35:49,721 - __main__ - INFO - Анализ резюме завершен успешно.
